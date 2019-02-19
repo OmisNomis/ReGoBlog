@@ -1,0 +1,13 @@
+{
+  "listenAddress": "localhost:3005",
+  "cms": {
+    "authToken": "authyToken"
+  },
+  "auth": {
+    "basic": {
+      "username": "admin",
+      "password": "supersecretpassword",
+      "realm": "ReGo"
+    }
+  }
+}
