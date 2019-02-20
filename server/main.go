@@ -46,6 +46,13 @@ func start() {
 	api.HandleFunc("/categories", routes.GetCategories).Methods("GET")
 	api.HandleFunc("/category/{category}", routes.GetCategory).Methods("GET")
 
+	// Serve static assets directly.
+	router.PathPrefix("/static/").Handler(http.FileServer(http.Dir("../public")))
+	// Serve index page on all unhandled routes
+	router.PathPrefix("/").HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "../public/index.html")
+	})
+
 	var handler http.Handler
 	handler = router
 	handler = handlers.LoggingHandler(os.Stdout, handler)
