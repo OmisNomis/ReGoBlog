@@ -9,3 +9,9 @@ An open source blog, designed to be a "plug and play" solution for `ButterCMS`. 
 - [create-react-app](https://facebook.github.io/create-react-app/) (version >= `1.5.2`)
 - A [butterCMS](https://buttercms.com/) account
 
+
+## Running the server
+When in the `server` directory run the `run.sh` script
+
+## Running the frontend
+When in the `frontend` directory run `npm start`
