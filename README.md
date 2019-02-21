@@ -9,6 +9,7 @@ An open source blog, designed to be a "plug and play" solution for `ButterCMS`. 
 - [create-react-app](https://facebook.github.io/create-react-app/) (version >= `1.5.2`)
 - A [butterCMS](https://buttercms.com/) account
 
+<<<<<<< HEAD
 ## Usage Instructions
 - Add your ButterCMS and BasicAuth information to `server > config > config.json`
 - Add your Server BasicAuth credentials to `frontend > .env`
@@ -20,3 +21,11 @@ An open source blog, designed to be a "plug and play" solution for `ButterCMS`. 
 ## Building for Production
 - Run the `build.sh` script in the `server` directory. This will create a `build` folder with the compiled versions.
 - Run `npm run build` in the `frontend` directory. This will create a `build` folder with the optimised production ready code.
+=======
+
+## Running the server
+When in the `server` directory run the `run.sh` script
+
+## Running the frontend
+When in the `frontend` directory run `npm start`
+>>>>>>> 155df0dfbf9c3f5e5ce34bf14cef8b6ce54240e3
