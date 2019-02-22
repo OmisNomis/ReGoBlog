@@ -54,7 +54,7 @@ class BlogList extends Component {
                         <h2 className='post-title'>{post.title}</h2>
                         <h3 className='post-subtitle'>{post.summary}</h3>
                       </Link>
-                      <p className='post-meta'>{`Posted by ${post.author.first_name} ${post.author.last_name} on ${moment().format('MMMM Do, YYYY', post.published)}`}</p>
+                      <p className='post-meta'>{`Posted by ${post.author.first_name} ${post.author.last_name} on ${moment(post.published).format('MMMM Do, YYYY')}`}</p>
                     </div>
                     <hr />
                   </div>
